@@ -13,11 +13,14 @@ var nightmare = require('night-map')(require('nightmare'))({show: true})
 var urls = ['https://www.google.com/', 'https://www.npmjs.com/', 'https://nodejs.org/en/']
 
 nightmare
-	.map(function (url) {		// Pass a function that returns a nightmare thing
-		return nightmare		// Will call this function on every single element in the array
+	// Pass a function that returns a nightmare thing
+	// I will call this function on every single element in the array
+	.map(function (url) {		
+		return nightmare		
 			.goto(url)	
-			.title()			// I use .then() to collect what ever .title() spits out
-	}, urls) 					// pass array as second parameter in typical nightmare fashion
+			.title()			
+		// I use .then() to collect what ever .title() spits out
+	}, urls) // pass array as second parameter in typical nightmare fashion			
 	.then(results => {
 		console.log(results)	// => [ 'Google', 'npm', 'Node.js' ]
 		return nightmare.end()
