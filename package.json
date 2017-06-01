@@ -1,6 +1,6 @@
 {
   "name": "night-map",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Makes it a little easier to loop through an array in Nightmare",
   "main": "main.js",
   "scripts": {
