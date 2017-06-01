@@ -19,7 +19,7 @@ nightmare
 		return nightmare		
 			.goto(url)	
 			.title()			
-		// I use .then() to collect what ever .title() spits out
+	// I use .then() to collect what ever .title() spits out
 	}, urls) // pass array as second parameter in typical nightmare fashion			
 	.then(results => {
 		console.log(results)	// => [ 'Google', 'npm', 'Node.js' ]
