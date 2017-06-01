@@ -1,0 +1,22 @@
+{
+  "name": "night-map",
+  "version": "1.0.0",
+  "description": "Makes it a little easier to loop through an array in Nightmare",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjameep/night-map.git"
+  },
+  "author": "Benjamin Earl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjameep/night-map/issues"
+  },
+  "homepage": "https://github.com/benjameep/night-map#readme",
+  "devDependencies": {
+    "nightmare": "^2.10.0"
+  }
+}
